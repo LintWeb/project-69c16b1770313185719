@@ -3,9 +3,272 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>project-69c16b1770313185719</title>
+    <title>Shaolin-Ji Karate-Do Academy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #d32f2f;
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffcdd2;
+        }
+
+        main {
+            margin-top: 80px;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #d32f2f;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #b71c1c;
+        }
+
+        section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .about {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 40px;
+            margin-bottom: 40px;
+        }
+
+        .about h2 {
+            color: #d32f2f;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .service-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-card h3 {
+            color: #d32f2f;
+            margin-bottom: 15px;
+        }
+
+        .contact {
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            margin-bottom: 30px;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .contact-item {
+            background-color: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .contact-item h3 {
+            color: #d32f2f;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav ul {
+                margin-top: 20px;
+            }
+
+            nav ul li {
+                margin-left: 0;
+                margin-right: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Blank white page -->
+    <header>
+        <nav>
+            <div class="logo">Shaolin-Ji Karate-Do Academy</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Classes</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Shaolin-Ji Karate-Do Academy</h1>
+                <p>Master the ancient art of karate in Chattogram's premier martial arts academy</p>
+                <a href="#contact" class="btn">Get Started Today</a>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Our Academy</h2>
+            <p>Shaolin-Ji Karate-Do Academy is dedicated to teaching the traditional art of karate while fostering discipline, respect, and physical fitness. Our experienced instructors provide personalized training for students of all ages and skill levels.</p>
+            <p>We are proud to be rated 4.6 stars on Google based on 11 reviews from our satisfied students and their families.</p>
+        </section>
+
+        <section id="services" class="services">
+            <div class="service-card">
+                <h3>Beginner Classes</h3>
+                <p>Perfect for those new to martial arts. Learn basic techniques, forms, and build a strong foundation.</p>
+            </div>
+            <div class="service-card">
+                <h3>Advanced Training</h3>
+                <p>For experienced practitioners looking to refine their skills and compete at higher levels.</p>
+            </div>
+            <div class="service-card">
+                <h3>Kids Programs</h3>
+                <p>Specialized classes for children focusing on fun, discipline, and character development.</p>
+            </div>
+            <div class="service-card">
+                <h3>Self-Defense</h3>
+                <p>Practical techniques to protect yourself and loved ones in real-world situations.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>Rating</h3>
+                    <p>⭐ 4.6 (based on 11 reviews)</p>
+                    <p>Karate school</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Address</h3>
+                    <p>Nurbag Abashik Elaka, GEC</p>
+                    <p>Chattogram 4000</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Phone</h3>
+                    <p>01851-918335</p>
+                </div>
+            </div>
+            <p>Ready to start your karate journey? Contact us today!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Shaolin-Ji Karate-Do Academy. All rights reserved.</p>
+    </footer>
 </body>
 </html>
